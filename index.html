@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Perfume and Cosmetic</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Aura Perfumes</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Shop Now</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Mirë se vini tek Aura Perfumes</h1>
+      <p style="color:gold">Lëre aromën të flasë për ty – me parfume unike dhe të qëndrueshme nga Aura Perfume and Cosmetic, për çdo moment të veçantë.</p>
+    </div>
+  </section>
+
+  <section id="shop" class="shop">
+    <h2>Shop By Category</h2>
+    <div class="category-menu">
+      <button onclick="filterPerfumes('men')">Men</button>
+      <button onclick="filterPerfumes('woman')">Woman</button>
+      <button onclick="filterPerfumes('mix')">Mix</button>
+    </div>
+  
+    <div class="perfume-list">
+      <!-- MEN -->
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Stronger With You" />
+        <h3>Armani / Stronger With You</h3>
+        <p>Intense and warm scent with lasting impression.</p>
+        <button>Order</button>
+      </div>
+      
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Dior Sauvage" />
+        <h3>Dior / Sauvage</h3>
+        <p>Fresh and bold fragrance with spicy notes.</p>
+        <button>Order</button>
+      </div>
+      
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Hugo Boss" />
+        <h3>Hugo Boss / Hugo</h3>
+        <p>Classic scent with clean and confident aroma.</p>
+        <button>Order</button>
+      </div>
+      
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Carolina Herrera Bad Boy" />
+        <h3>Carolina Herrera / Bad Boy</h3>
+        <p style="color:black">Magnetic and mysterious, perfect for the night.</p>
+        <button>Order</button>
+      </div>
+      
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Versace Eros" />
+        <h3>Versace / Eros</h3>
+        <p style="color:black">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Gualtier Ultra Male" />
+        <h3>Gualtier / Ultra Male</h3>
+        <p style="color:black">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Creed Aventus" />
+        <h3>Creed / Aventus</h3>
+        <p style="color:black">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Tom Ford Noir Extreme" />
+        <h3>Tom Ford / Noir Extreme</h3>
+        <p style="color:black">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Chanel Bleu de Chanel" />
+        <h3>Chanel / Bleu de Chanel</h3>
+        <p style="color:black">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Dolce Gabbana K by D&G" />
+        <h3>Dolce Gabbana / K by D&G</h3>
+        <p style="color:black">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Valentino Uomo" />
+        <h3>Valentino / Uomo</h3>
+        <p style="color:black">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Gualtier Scandal" />
+        <h3>Gualtier / Scandal</h3>
+        <p style="color:black">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="BVLGARI Man in Black" />
+        <h3>BVLGARI / Man in Black</h3>
+        <p style="color:black">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Gualtier Le Beau" />
+        <h3>Gualtier / Le Beau</h3>
+        <p style="color:black">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="men">
+        <img src="images/men1.png" alt="Parfum de Marly Haltane" />
+        <h3>Parfum de Marly / Haltane</h3>
+        <p style="color:black">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      
+      <!-- WOMAN -->
+     
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+  
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Dior " />
+        <h3>Dior / J'Adore</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+      <div class="perfume-card" data-category="woman">
+        <img src="images/woman1.png" alt="Paco Rabbane" />
+        <h3>Paco Rabbane / Fame</h3>
+        <p style="color:rgb(255, 255, 255)">Strong and passionate scent for bold men.</p>
+        <button>Order</button>
+      </div>
+
+  
+      <!-- MIX -->
+      <div class="perfume-card" data-category="mix">
+        <h3>Vanilla Musk</h3>
+        <p>Unisex blend with warm vanilla tones.</p>
+        <button>Order</button>
+      </div>
+  
+      <div class="perfume-card" data-category="mix">
+        <h3>Amber Soul</h3>
+        <p>Sophisticated scent suitable for all.</p>
+        <button>Order</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Follow us and visit us:</p>
+    <ul class="social-links">
+      <li><a href="https://instagram.com/auraperfumes" target="_blank">Instagram</a></li>
+      <li><a href="https://facebook.com/auraperfumes" target="_blank">Facebook</a></li>
+      <li><a href="https://tiktok.com/@auraperfumes" target="_blank">TikTok</a></li>
+    </ul>
+    <p>Address: <a href="https://maps.google.com/?q=RILINDJA KOMBETARE MALISHEVE" target="_blank">RILINDJA KOMBETARE MALISHEVE</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aura Perfumes. All rights reserved.</p>
+  </footer>
+  <script>
+    function filterPerfumes(category) {
+      const cards = document.querySelectorAll('.perfume-card');
+      cards.forEach(card => {
+        if (card.dataset.category === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  
+    // Opsionale: fillimisht t’i fshehim të gjithë, ose të shfaqim një kategori default
+    window.onload = () => {
+  const cards = document.querySelectorAll('.perfume-card');
+  cards.forEach(card => card.style.display = 'none');
+   };
+
+  </script>
+  
+
+
+
+
+
+
+</body>
+</html>
