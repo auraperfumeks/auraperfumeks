@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Perfume and Cosmetics</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/logo.jpeg" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Aura Perfumes" class="logo-img" />
+      <span>Aura Perfumes</span>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Menu</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Na Kontaktoni</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero fade-in">
+    <div class="hero-content">
+      <h1>MIRE SE VINI TEK AURA PERFUMES</h1>
+      <p class="intro-text">Lëre aromën të flasë për ty – me parfume unike dhe të qëndrueshme nga Aura Perfume and Cosmetic, për çdo moment të veçantë.</p>
+    </div>
+  </section>
+
+  <section id="shop" class="shop fade-in">
+    <h2>MENU</h2>
+    <div class="category-menu">
+      <button onclick="filterPerfumes('men')">Men</button>
+      <button onclick="filterPerfumes('woman')">Woman</button>
+      <button onclick="filterPerfumes('mix')">Mix</button>
+    </div>
+  
+    <div class="perfume-list">
+      <!-- Produkt shembull -->
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men1.png" alt="Stronger With You" />
+        <h3>Armani / Stronger With You</h3>
+        <p>Aromë e ngrohtë me nota të ëmbla që bëhet intensive. Moderne dhe elegante.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Armani%20Stronger%20With%20You" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men2.png" alt="Sauvage" />
+        <h3>Dior / Sauvage</h3>
+        <p>Freski dhe spice të fuqishme, me një bazë drurinore që zgjat gjatë.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Dior%20Sauvage" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men3.png" alt="Hugo Boss" />
+        <h3>Hugo Boss / Hugo</h3>
+        <p>Agrume të lehta dhe dru delikat – aromë e freskët për çdo ditë.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Hugo-Boss%20Hugo" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men4.png" alt="Bad Boy" />
+        <h3>Carolina Herrera / Bad Boy</h3>
+        <p>Freski sfiduese me spice dhe thellësi drurinore – e ngrohtë dhe mashkullore.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Carolina%20Herrera%20Bad%20Boy" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men5.png" alt="Eros" />
+        <h3>Versace / Eros</h3>
+        <p>Freski me bazë të ëmbël dhe të ngrohtë – pasionante dhe energjike.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Versace%20Eros" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men6.png" alt="Ultra Male" />
+        <h3>Gualtier / Ultra Male</h3>
+        <p>E ëmbël dhe intensive, me nuanca të forta dhe karakter të guximshëm.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Gualtier%20Ultra%20Male" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men7.png" alt="Aventus" />
+        <h3>Creed / Aventus</h3>
+        <p>Fruta dhe dru i tymosur – aromë luksoze dhe e qëndrueshme.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Creed%20Aventus" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men8.png" alt="Noir Extreme" />
+        <h3>Tom Ford / Noir Extreme</h3>
+        <p>Spice dhe dru ekzotik – e thellë, misterioze dhe elegante.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Tom%20Ford%20Noir%20Extreme" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men9.png" alt="Bleu de Chanel" />
+        <h3>Chanel / Bleu de Chanel</h3>
+        <p>Freski dhe elegancë drurinore – balancë perfekte dhe moderne.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Chanel%20Bleu%20de%20Chanel" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men10.png" alt="K" />
+        <h3>Dolce & Gabbana / K</h3>
+        <p>Freski dhe thellësi në një aromë unike dhe enigmatike.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Dolce-Gabbana%20K-by-DG" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men11.png" alt="Uomo" />
+        <h3>Valentino / Uomo</h3>
+        <p>Delikate dhe drurinore me spice – aromë klasike mashkullore.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Valentino%20Uomo" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men12.png" alt="Scandal" />
+        <h3>Gualtier / Scandal</h3>
+        <p>Freski me thellësi të ngrohtë – aromë sfiduese dhe ndryshe.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Gualtier%20Scandal" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men13.png" alt="Man in Black" />
+        <h3>BVLGARI / Man in Black</h3>
+        <p>Dru i errët dhe aromë e fortë – elegante dhe mbresëlënëse.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20BVLGARI%20Man-in-black" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men14.png" alt="Le Beau" />
+        <h3>Gualtier / Le Beau</h3>
+        <p>E ëmbël dhe drurinore – aromë elegante me karakter.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Gualtier%20Le-Beau" target="_blank" class="order-btn">Order</a>
+      </div>
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge">-20%</div>
+        <img src="men/men15.png" alt="Haltane" />
+        <h3>Parfum de Marly / Haltane</h3>
+        <p>Freski dhe ngrohtësi – aromë e rafinuar dhe e paharrueshme.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Parfum-de-Marly%20Haltane" target="_blank" class="order-btn">Order</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seksioni i Testimonialeve -->
+  <section id="testimonials" class="testimonials fade-in">
+    <h2>Qfar thonë klientet tanë:</h2>
+    <div class="testimonial-list">
+      <div class="testimonial">
+        <p>"Përvoja e mahnitshme me Aura Perfumes. Kualiteti është i jashtëzakonshëm!"</p>
+      </div>
+      <div class="testimonial">
+        <p>"Parfumet janë tërheqëse dhe aroma zgjat për tërë ditën. Kam marrë komplimente gjithmonë!"</p>
+      </div>
+      <div class="testimonial">
+        <p>"Një atmosferë unike dhe personale. Rekomandoj çdoherë me gjithë zemrën."</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Us</h2>
+    <p>Na ndjekeni, dhe na vizitoni ne:</p>
+    <ul class="social-links">
+      <li><a href="https://instagram.com/auraparfumeks" target="_blank">Instagram</a></li>
+      <li><a href="https://facebook.com/auraparfumeks" target="_blank">Facebook</a></li>
+      <li><a href="https://tiktok.com/@auraperfumeks" target="_blank">TikTok</a></li>
+    </ul>
+    <p>Address: <a href="https://maps.google.com/?q=RILINDJA KOMBETARE MALISHEVE" target="_blank">RILINDJA KOMBETARE MALISHEVE</a></p>
+  </section>
+
+  <footer class="fade-in">
+    <p>&copy; 2025 Aura Perfumes. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal për Detajet e Produktit -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Armani / Stronger With You</h2>
+      <img src="images/men1.png" alt="Stronger With You" />
+      <p>Intense and warm scent with a lasting impression. Discover the unique blend of notes that make this perfume a perfect choice for any occasion.</p>
+    </div>
+  </div>
+
+  <!-- Butoni Scroll to Top -->
+  <button id="scrollToTop" title="Go to top">↑</button>
+
+  <script>
+    // Filtrimi i parfumeve sipas kategorisë
+    function filterPerfumes(category) {
+      const cards = document.querySelectorAll('.perfume-card');
+      cards.forEach(card => {
+        if (card.dataset.category === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+    // Hide product cards on ngarkim fillestar
+    window.onload = () => {
+      const cards = document.querySelectorAll('.perfume-card');
+      cards.forEach(card => card.style.display = 'none');
+    };
+
+    // Funksionet e modal-it për detajet e produktit
+    function openModal(event) {
+      event.stopPropagation();
+      var modal = document.getElementById("productModal");
+      modal.style.display = "block";
+    }
+    function closeModal() {
+      var modal = document.getElementById("productModal");
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      var modal = document.getElementById("productModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    // Butoni Scroll to Top
+    document.getElementById("scrollToTop").addEventListener("click", function(){
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  </script>
+</body>
+</html>
