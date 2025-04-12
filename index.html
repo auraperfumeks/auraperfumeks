@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/png" href="images/logo.jpeg" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Perfume and Cosmetic</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Aura Perfumes" class="logo-img" />
+      <span>Aura Perfumes</span>
+    </div>
+    
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Shop Now</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Mirë se vini tek Aura Perfumes</h1>
+      <p class="intro-text">Lëre aromën të flasë për ty – me parfume unike dhe të qëndrueshme nga Aura Perfume and Cosmetic, për çdo moment të veçantë.</p>
+    </div>
+  </section>
+
+  <section id="shop" class="shop">
+    <h2>MENU</h2>
+    <div class="category-menu">
+      <button onclick="filterPerfumes('men')">Men</button>
+      <button onclick="filterPerfumes('woman')">Woman</button>
+      <button onclick="filterPerfumes('mix')">Mix</button>
+    </div>
+  
+    <div class="perfume-list">
+      <!-- Example perfume -->
+      <div class="perfume-card" data-category="men" data-discount="20" style="display: none;">
+        <div class="discount-badge"></div>
+        <img src="images/men1.png" alt="Stronger With You" />
+        <h3>Armani / Stronger With You</h3>
+        <p>Intense and warm scent with lasting impression.</p>
+        <a href="https://wa.me/38345455194?text=Pershendetje!%20Deshiroj%20te%20porosis%20parfumin%20Armani%20Stronger%20With%20You" target="_blank" class="order-btn">Order</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Follow us and visit us:</p>
+    <ul class="social-links">
+      <li><a href="https://instagram.com/auraparfumeks" target="_blank">Instagram</a></li>
+      <li><a href="https://facebook.com/auraparfumeks" target="_blank">Facebook</a></li>
+      <li><a href="https://tiktok.com/@auraperfumeks" target="_blank">TikTok</a></li>
+    </ul>
+    <p>Address: <a href="https://maps.google.com/?q=RILINDJA KOMBETARE MALISHEVE" target="_blank">RILINDJA KOMBETARE MALISHEVE</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aura Perfumes. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    function filterPerfumes(category) {
+      const cards = document.querySelectorAll('.perfume-card');
+      cards.forEach(card => {
+        if (card.dataset.category === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Fillimisht mos shfaq asnjë parfum
+    window.onload = () => {
+      const cards = document.querySelectorAll('.perfume-card');
+      cards.forEach(card => card.style.display = 'none');
+    };
+  </script>
+</body>
+</html>
